@@ -7,7 +7,8 @@ class RouterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
+      color: Colors.white70,
       child: Column(
         children: const [
           Text(
@@ -15,6 +16,7 @@ class RouterView extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
           Text('v1.0.0', style: TextStyle(color: Colors.grey, fontSize: 12)),
+          SideMenu()
         ],
       ),
     );
